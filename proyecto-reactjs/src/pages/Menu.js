@@ -1,5 +1,6 @@
 import '../styles/Menu.css';
 import { Component } from 'react';
+import {Link} from 'react-router-dom'
 
 class Menu extends Component
 {
@@ -94,8 +95,12 @@ class ControlesNavegacion extends Component
     return(
       <div className='botonesNavegacion'>
           <ControlesActual actual="Menu"/>
+          <Link to={'/rutinas'}>
           <ControlesSecundaria secundaria="Rutinas"/>
+          </Link>
+          <Link to={'/programar'}>
           <ControlesTerciaria terciaria="Programar"/>
+          </Link>
       </div>
     )
   }

@@ -1,5 +1,6 @@
 import '../styles/Registro.css';
 import { Component } from 'react';
+import {Link} from 'react-router-dom'
 
 class Registro extends Component
 {
@@ -80,7 +81,10 @@ class LetraMenuTitulo extends Component
    {
      return(
        <div className='divBotonInicio'>
-          <button className='botonInicio'>{this.props.contenido}</button>
+          <Link to={'/inicio'}>
+            <button className='botonInicio'>{this.props.contenido}</button>
+          </Link>
+          
        </div>
      )
    }

@@ -1,5 +1,6 @@
 import '../styles/Rutinas.css';
 import { Component } from 'react';
+import {Link} from 'react-router-dom'
 
 class Rutinas extends Component
 {
@@ -20,7 +21,9 @@ class DivNavegacion extends Component
   {
     return(
       <div className='contenedorNavegacion'>
+        <Link to={'/inicio'}>
           <NavegacionCiudadPais lugar="Bogotá/Colombia"/>
+          </Link>
           <div className='contenedorNombreYDatos'>
             <h1 className='nombre'>{this.props.nombre}</h1>
             <ContenedorDatosNavegacion/>
@@ -94,8 +97,12 @@ class ControlesNavegacion extends Component
     return(
       <div className='botonesNavegacion'>
           <ControlesActual actual="Rutinas"/>
-          <ControlesSecundaria secundaria="Menu"/>
-          <ControlesTerciaria terciaria="Programar"/>
+          <Link to={'/menu'}>
+            <ControlesSecundaria secundaria="Menu"/>
+          </Link>
+          <Link to={'/programar'}>
+            <ControlesTerciaria terciaria="Programar"/>
+          </Link>
       </div>
     )
   }
@@ -226,7 +233,9 @@ class ContenidoRutinas extends Component {
       return(
           <div className='titulos1'>
               <div className='c1'>
+                <Link to={'crear-rutina'}>
                 <button>crear rutina</button>
+                </Link>
                 <h1>Rutinas</h1>
                 <h1>Rutinas</h1>
                 <h1>Rutinas</h1>

@@ -1,5 +1,6 @@
 import '../styles/Inicio.css';
 import { Component } from 'react';
+import {Link} from 'react-router-dom'
 
 class Inicio extends Component
 {
@@ -36,7 +37,9 @@ class LetraMenuTitulo extends Component
          <BotonInicio contenido="Iniciar Sesion"/>
          <div className='preguntasInicio'>
             <h3 className='laLetra'>¿Olvido su contraseña?</h3>
-            <h3 className='laLetra'>Si no tienes cuenta crea una ya</h3>
+            <Link to={'/registro'}>
+              <h3 className='laLetra'>Si no tienes cuenta crea una ya</h3>
+            </Link>
          </div>
        </div>
      )
@@ -61,7 +64,9 @@ class LetraMenuTitulo extends Component
    {
      return(
        <div className='divBotonInicio'>
-          <button className='botonInicio'>{this.props.contenido}</button>
+         <Link to={'/rutinas'}>
+            <button className='botonInicio'>{this.props.contenido}</button>
+         </Link>
        </div>
      )
    }
