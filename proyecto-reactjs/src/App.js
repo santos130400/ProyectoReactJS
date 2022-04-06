@@ -1,13 +1,13 @@
 import './App.css';
 import React from 'react';
 import { Component } from 'react';
-import Inicio from './pages/Inicio'
-import Registro from './pages/Registro';
-import Menu from './pages/Menu';
-import Rutinas from './pages/Rutinas';
-import Programar from './pages/Programar';
-import CrearRutinas from './pages/CrearRutinas';
-import Layout from './pages/Layout';
+import Inicio from './components/inicio/Inicio'
+import Registro from './components/registro/Registro';
+import Menu from './components/menu/Menu';
+import Rutinas from './components/Rutinas';
+import Programar from './components/Programar';
+import CrearRutinas from './components/CrearRutinas';
+import Layout from './components/Layout';
 import {
   BrowserRouter as Router,
   Routes,
@@ -23,7 +23,6 @@ class App extends Component
       <Router>
         <div className='App'>
           {/* <Rutinas /> */}
-
             <Routes>
               <Route path='/crear-rutinas' element={<CrearRutinas />}/>
               <Route path='/inicio' element={<Inicio />}/>

@@ -1,0 +1,78 @@
+.contenedor{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../media/fondo-menu.jpg);
+    background-size: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .titulos
+  {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 400%;
+  }
+  .contieneDatosInicio
+  {
+    width: 60%;
+    height: 60%;
+    background-color: white;
+    margin: 5%;
+    border-radius: 30px;
+    border: 5px solid rgb(199, 1, 1);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    box-shadow: 10px 5px 5px black;
+    grid-row: auto auto auto auto;
+  }
+  
+  .contienePregunta
+  {
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(199, 1, 1);
+    border-radius: 20px;
+    height: 70px;
+    box-shadow: 2px 1px 1px black;
+  }
+  .elInput{
+    width: 50%;
+    font-size:200%;
+  }
+  label{
+  font-size: 200%;
+  }
+  
+  .divBotonInicio{
+    box-shadow: 2px 1px 1px black;
+    width: 60%;
+    height: 50px;
+  }
+  
+  .botonInicio{
+    width: 100%;
+    height: 100%;
+    font-size: 200%;
+  }
+  
+  .laLetra{
+    padding: 0;
+    font-size: 100%;
+    margin: 0;
+    text-align: center;
+    color: black;
+  }
+  
+  .preguntasInicio{
+    height: 12%;
+  }

@@ -1,0 +1,110 @@
+.contenedor{
+    width: 100%;
+    height: 100%;
+    background-image: url(../../../media/fondo-menu.jpg);
+    background-size: auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .titulos
+  {
+    color: white;
+    margin: 0;
+    text-align: center;
+    font-size: 200%;
+    margin: 2%;
+  }
+  .contieneDatos
+  {
+    width: 60%;
+    height: 85%;
+    background-color: white;
+    margin: 0%;
+    border-radius: 30px;
+    border: 5px solid rgb(199, 1, 1);
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0;
+    box-shadow: 10px 5px 5px black;
+    grid-row: auto auto auto auto;
+  }
+  
+  .contienePregunta
+  {
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(199, 1, 1);
+    border-radius: 20px;
+    height: 50px;
+    box-shadow: 2px 1px 1px black;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+  .contienePreguntaRadio
+  {
+    width: 85%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+    align-items: center;
+    border: 1px solid rgb(199, 1, 1);
+    border-radius: 20px;
+    height: 50px;
+    box-shadow: 2px 1px 1px black;
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .contieneTerminos
+  {
+    width: 80%;
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+  input{
+    width: 30px;
+    height: 30px;
+    font-size:100%;
+  }
+  label{
+  font-size: 100%;
+  }
+  
+  .divBotonInicio{
+    box-shadow: 2px 1px 1px black;
+    width: 60%;
+    height: 50px;
+  }
+  
+  .botonInicio{
+    width: 100%;
+    height: 100%;
+    font-size: 100%;
+  }
+  .pregunta{
+    font-size: 100%;
+  }
+  .campo{
+    width: 50%;
+    font-size:100%; 
+    height: auto;
+  }
+
+  .seccion{
+    width: 100%;
+    display: flex;
+    flex-flow: row;
+    justify-content: space-evenly;
+  }
