@@ -10,7 +10,7 @@
 .contenedorNavegacion{
       height: 20%;
       width: 100%;
-      background-image: url("../../media/banner-menu.jpg");
+      background-image: url("../../../media/banner-menu.jpg");
       display: flex;
       flex-flow: column;
       justify-content: center;

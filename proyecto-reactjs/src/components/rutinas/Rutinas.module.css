@@ -10,7 +10,7 @@
 .contenedorNavegacion{
       height: 20%;
       width: 100%;
-      background-image: url("../../media/banner-menu.jpg");
+      background-image: url("../../../media/banner-menu.jpg");
       display: flex;
       flex-flow: column;
       justify-content: center;
@@ -126,6 +126,9 @@ h3{
 h2{
     margin-right: 10px;
 }
+.h2Titulos{
+    text-align: center;
+}
 .navegarActual{
     margin: 0;
     text-align: center;
@@ -176,18 +179,27 @@ h2{
     display: flex;
     flex-flow: row;
     justify-content: space-between;
-    margin-left: 250px;
-    margin-right: 250px;
+    margin-top: 40px;
+  }
+  .contieneTitulos{
+    width: 50%;
+    text-align: center;
+  }
+  .titulos2{
+    display: flex;
+    flex-flow: row;
+    justify-content: space-between;
     margin-top: 40px;
   }
   .c1{
   
     overflow-y: scroll;
     height: 600px;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
+    align-items: center;
   }
   .c1 h1{
       background-color: blue;
@@ -201,13 +213,13 @@ h2{
     
   }
   .c2{
-  
     overflow-y: scroll;
     height: 600px;
-    width: 40%;
+    width: 50%;
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
+    align-items: center;
   }
   .c2 h1{
     background-color: blue;

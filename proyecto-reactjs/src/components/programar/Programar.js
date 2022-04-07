@@ -1,8 +1,8 @@
-import Estilos from '../menu/Menu.module.css'
+import Estilos from '../programar/Programar.module.css';
 import { Component } from 'react';
 import {Link} from 'react-router-dom'
 
-class Menu extends Component
+class Programar extends Component
 {
   render()
   {
@@ -29,7 +29,7 @@ class Menu extends Component
         </div>
         <div className={Estilos.botonesNavegacion}>
           <div className={Estilos.paginaActual}>
-            <h2 className={Estilos.navegarActual}>Menu</h2>
+            <h2 className={Estilos.navegarActual}>Programar</h2>
           </div>
           <div className={Estilos.paginaSecundaria}>
             <Link to={'/rutinas'}>
@@ -37,37 +37,27 @@ class Menu extends Component
             </Link>
           </div>
           <div className={Estilos.paginaTerciaria}>
-            <Link to={'/programar'}>
-              <h2 className={Estilos.navegarLetras}>Programar</h2>
+            <Link to={'/menu'}>
+              <h2 className={Estilos.navegarLetras}>Menu</h2>
             </Link>
           </div>
         </div>
-        <div className={Estilos.contenedorContenido1}>
-            <div className={Estilos.contenedorNoticias1}>
-              <h2>NOTICIAS</h2>
-              <div className={Estilos.noticia}>
+        <div className={Estilos.contenedorContenido2}>
+          <div className="container-fluid p-0 m-0 row justify-content-center gray-light">
+            <div className="col-12 col-sm-10 col-md-9 col-lg-8 col-xl-7 p-5 light">
+              <p>Aquí podras saber como se va a comportar el clima el dia de hoy, a la hora que 
+                tengas programado tus entrnamientos en exteriores.
+              </p>
+              <div className={Estilos.imageContainer}>
+                <img className={Estilos.clima} src="https://s1.eestatic.com/2020/04/10/elandroidelibre/el_androide_libre_481464119_180501083_1280x853.jpg" alt='clima'></img>
+                <img className={Estilos.clima} src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwsaGRZ9YFCFRTUTuIrXCsnFD6cexng--itA&usqp=CAU" alt='clima'></img>  
               </div>
-              <div className={Estilos.noticia}>
-              </div>
-              <div className={Estilos.noticia}>
-              </div>
-              <div className={Estilos.noticia}>
-              </div>
+              <p>Actualizado hace 1 hora</p>
             </div>
-            <div className={Estilos.contenedorRecetas1}>
-              <h2>RECETAS</h2>
-              <div className={Estilos.receta}>
-              </div>
-              <div className={Estilos.receta}>
-              </div>
-              <div className={Estilos.receta}>
-              </div>
-              <div className={Estilos.receta}>
-              </div>
-            </div>
+          </div>
         </div>
       </div>
     )
   }
 }
- export default Menu;
+ export default Programar;
