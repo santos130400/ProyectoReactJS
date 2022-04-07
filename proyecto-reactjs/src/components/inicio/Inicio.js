@@ -6,6 +6,16 @@ class Inicio extends Component
 {
   render()
   {
+    function existe(props) {
+      const usuario = props.usuario;
+      const contra = props.contra;
+      if (usuario.equals("1") && contra.equals("1")) {
+        return <Link to={'/menu'}>
+                <button className={Estilos.botonInicio}>Iniciar Seasión</button>
+              </Link>;
+      }
+      return console.log("no registrado");
+    };
     return(
       <div className={Estilos.contenedor}>
         <div>
@@ -21,9 +31,9 @@ class Inicio extends Component
             <input className={Estilos.elInput} type='password'></input>
           </div>
           <div className={Estilos.divBotonInicio}>
-            <Link to={'/menu'}>
-              <button className={Estilos.botonInicio}>Iniciar Seasión</button>
-            </Link>
+              <Link to={'/menu'}>
+                <button className={Estilos.botonInicio}>Iniciar Seasión</button>
+              </Link>;
           </div>
           <div className={Estilos.preguntasInicio}>
             <h3 className={Estilos.laLetra}>¿Olvido su contraseña?</h3>

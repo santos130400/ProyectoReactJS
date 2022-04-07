@@ -7,7 +7,7 @@ class Rutinas extends Component
   render()
   {
     return(
-      <div className='contenedorMenu'>
+      <div className={Estilos.contenedorMenu}>
         <div className={Estilos.contenedorNavegacion}>
           <div className={Estilos.contenedorCiudadPais}>
             <h3>{this.props.lugar}</h3>
@@ -42,81 +42,72 @@ class Rutinas extends Component
             </Link>
           </div>
         </div>
-          <DivContenido/>
-      </div>
-    )
-  }
-}
-class DivContenido extends Component
-{
-  render()
-  {
-    return(
-      <div className={Estilos.contenedorContenido3}>
-        <div className={Estilos.contengoTodo}>
-          <div className={Estilos.searchBar}>
-              <div className="navy georgia ma0 grow">
-              <img className={Estilos.lupa} src='https://cdn-icons-png.flaticon.com/128/64/64673.png' alt='lupa'></img>
+        <div className={Estilos.contenedorContenido3}>
+          <div className={Estilos.contengoTodo}>
+            <div className={Estilos.searchBar}>
+                <div className="navy georgia ma0 grow">
+                <img className={Estilos.lupa} src='https://cdn-icons-png.flaticon.com/128/64/64673.png' alt='lupa'></img>
+                </div>
+                <div className={Estilos.buscar}>
+                    <input 
+                    className={Estilos.buscar}
+                    type = "search" 
+                    placeholder = "Buscar Rutina" 
+                    />
+                </div>           
+            </div>
+            <div className={Estilos.rutinas1}>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+              <h1>Rutinas</h1>
+            </div>
+            <div className={Estilos.titulos1}>
+              <div className={Estilos.contieneTitulos}>
+                <h2 className={Estilos.h2Titulos}>Mis rutinas</h2>
               </div>
-              <div className={Estilos.buscar}>
-                  <input 
-                  className={Estilos.buscar}
-                  type = "search" 
-                  placeholder = "Buscar Rutina" 
-                  />
-              </div>           
-          </div>
-          <div className={Estilos.rutinas1}>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-            <h1>Rutinas</h1>
-          </div>
-          <div className={Estilos.titulos1}>
-            <div className={Estilos.contieneTitulos}>
-              <h2 className={Estilos.h2Titulos}>Mis rutinas</h2>
+              <div className={Estilos.contieneTitulos}>
+                <h2 className={Estilos.h2Titulos}>Rutinas guardadas</h2>
+              </div>
             </div>
-            <div className={Estilos.contieneTitulos}>
-              <h2 className={Estilos.h2Titulos}>Rutinas guardadas</h2>
-            </div>
-          </div>
-          <div className={Estilos.titulos2}>
-            <div className={Estilos.c1}>
-              <Link to={'crear-rutina'}>
-              <button>crear rutina</button>
-              </Link>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-            </div>
-            <div className={Estilos.c2}>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
-              <h1>Rutinas</h1>
+            <div className={Estilos.titulos2}>
+              <div className={Estilos.c1}>
+                <Link to={'crear-rutinas'}>
+                <button>crear rutina</button>
+                </Link>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+              </div>
+              <div className={Estilos.c2}>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+                <h1>Rutinas</h1>
+              </div>
             </div>
           </div>
         </div>

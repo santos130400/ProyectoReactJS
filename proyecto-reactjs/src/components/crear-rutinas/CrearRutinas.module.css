@@ -1,3 +1,6 @@
+::-webkit-scrollbar {
+    display: none;
+}
 .contenedorMenu{
     width: 100%;
     height: 100%;
@@ -10,7 +13,7 @@
 .contenedorNavegacion{
       height: 20%;
       width: 100%;
-      background-image: url("../../media/banner-menu.jpg");
+      background-image: url("../../../media/banner-menu.jpg");
       display: flex;
       flex-flow: column;
       justify-content: center;
@@ -95,14 +98,13 @@
     border-bottom: 2px solid white;
     border-radius: 0px 0px 100% 100%;
 }
-.paginaTerciaria{
-    height: 60%;
-    width: 15%;
-    background-color: rgb(62, 62, 62);
-    border-bottom: 2px solid white;
-    border-radius: 0px 0px 100% 100%;
+.contenedorContenido1{
+    height: 73%;
+    width: 100%;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: row;
 }
-
 h1{
     text-align: start;
     color: white;
@@ -130,113 +132,71 @@ h2{
     color: white;
     font-size: 110%;
 }
-*
+.crearEjercicios{
+    width: 50%;
+    height: 100%;
+}
+.ejercicios{
+    width: 50%;
+    height: 100%;
+    margin-top: 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ejer{
+    width: 80%;
+    height: 200px;
+    min-height: 200px;
+    background-color: blue;
+    border-radius: 50px;
+    border: solid black 1px 1px 1px 1px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.h1eje{
+    color: white;
+}
+.contienePregunta
 {
-    margin: 0;
-    padding: 0%;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
+  width: 80%;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
+  align-items: center;
+  border: 1px solid rgb(199, 1, 1);
+  border-radius: 20px;
+  height: 50px;
+  box-shadow: 2px 1px 1px black;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: wheat;
 }
-.contenedorContenido{
-    position: relative;
-    height: 73%;
-    width: 90%;
-    max-width: 2000px;
-    min-height: 1000px;
-    background: rgb(184, 17, 17);
-    display: grid;
-    grid-template-columns: 2.5fr 2.5fr;
-    box-shadow: 0 35px 55px rgba(0, 0, 0, 0, 1);
-  }
-.contenedorIzquierda{
-    width: 100%;
-    height: 100%;
-    background-color: white;
-    margin: 0%;
-    border-radius: 0;
-    border: 4px solid rgb(199, 1, 1);
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    padding: 10px;
-    grid-row: auto auto auto auto;
-}
-.contieneDato{
-    width: 80%;
-    display: flex;
-    flex-flow: row;
-    justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid rgb(199, 1, 1);
-    border-radius: 20px;
-    height: 50px;
-    box-shadow: 2px 1px 1px black;
-    margin-left: 10px;
-    margin-right: 20px;
-}
-.datos{
-    
-        width: 100%;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-      
-}
-.nombre{
+.pregunta{
     font-size: 100%;
-}
-.rutinas{
-    background-color: lightgray;
-    display: inline-block;
-    margin: 5px 5px;
-    padding: 15px 15px;
-    width: 30%;
-    height: 5%;
-}
-.boxes{
-    padding: 0 0;
-    margin: 0 1px;
-    display: inline-block;
-    
-}
-.contenedorDerecha{
+  }
+  .campo{
+    width: 50%;
+    font-size:100%; 
+    height: auto;
+  }
+
+  .seccion{
     width: 100%;
-    height: 100%;
-    background-color: rgb(255, 0, 0);
-    margin: 0%;
-    border-radius: 0;
-    border: 4px solid rgb(136, 203, 241);
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
-    position: relative;
-    padding: 10px;
-    grid-row: auto auto auto auto;
-}
-.otros{
-    
-    width: 100%;
-    display: grid;
-    top: 50px;
-    flex-flow: row;
-    justify-content: space-evenly;
-    background: rgb(255, 0, 0);
-    grid-gap: 10%;
-  
-}
-.contieneOtros{
-    width: 80%;
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
-    align-items: center;
-    border: 1px solid rgb(199, 1, 1);
-    border-radius: 20px;
-    height: 50px;
-    box-shadow: 2px 1px 1px black;
-    margin-left: 10px;
-    margin-right: 20px;
-}
+    padding-top: 50px;
+  }
+  .elBoton{
+      width: 100%;
+      height: 100%;
+      box-shadow: 2px 1px 1px black;
+      background-color: wheat;
+      border: 1px solid rgb(199, 1, 1);
+      border-radius: 20px;
+  }
