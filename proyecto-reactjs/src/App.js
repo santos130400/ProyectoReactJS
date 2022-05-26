@@ -7,6 +7,7 @@ import Menu from './components/menu/Menu';
 import Rutinas from './components/rutinas/Rutinas';
 import Programar from './components/programar/Programar';
 import CrearRutinas from './components/crear-rutinas/CrearRutinas';
+import NotFound from "./components/NotFound/NotFound";
 import Layout from './components/Layout';
 import axios from '../src/instances/axiosInstance';
 import {
@@ -61,6 +62,7 @@ class App extends Component
               <Route path='/registro' element={<Registro />}/>
               <Route path='/rutinas' element={<Rutinas nombre="ARNOLD RIOS" estatura="178 cm" peso="68 Kg" genero="M" lugar="Bogotá/Colombia"/>}/>
               <Route path='/' exact>
+              <Route component={NotFound} />
               </Route>
             </Routes>
         </div>
