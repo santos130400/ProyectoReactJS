@@ -65,19 +65,24 @@ class CrearRutinas extends Component
                 <input className={Estilos.campo} type="text"></input>
               </div>
               <div className={Estilos.contienePregunta}>
-                <label className={Estilos.pregunta}>Dificulta:</label>
+                <label className={Estilos.pregunta}>Dificultad:</label>
                 <input className={Estilos.campo} type="text"></input>
               </div>
             </div>
             <div className={Estilos.seccion}>
               <div className={Estilos.contienePregunta}>
-                <label className={Estilos.pregunta}>Dificultad:</label>
+                <label className={Estilos.pregunta}>Imagen(opcional):</label>
                 <input className={Estilos.campo} type="file"></input>
               </div>
             </div>
             <div className={Estilos.seccion}>
               <div className={Estilos.contienePregunta}>
                 <button className={Estilos.elBoton}>Guardar Ejercicio</button>
+              </div>
+            </div>
+            <div className={Estilos.seccion}>
+              <div className={Estilos.contienePregunta}>
+                <button className={Estilos.elBoton}>Guardar Rutina</button>
               </div>
             </div>
           </div>

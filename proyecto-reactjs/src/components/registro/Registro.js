@@ -62,7 +62,7 @@ class Registro extends Component
          <input type='checkbox'></input>
          </div>
          <div className={Estilos.divBotonInicio}>
-          <Link to={'/inicio'}>
+          <Link to={'/'}>
             <button className={Estilos.botonInicio}>REGISTRARME</button>
           </Link>
          </div>

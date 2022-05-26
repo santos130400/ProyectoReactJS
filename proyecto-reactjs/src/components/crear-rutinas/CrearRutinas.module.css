@@ -190,7 +190,7 @@ h2{
     display: flex;
     flex-flow: row;
     justify-content: space-evenly;
-    padding-top: 50px;
+    padding-top: 30px;
   }
   .elBoton{
       width: 100%;
