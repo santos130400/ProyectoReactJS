@@ -19,17 +19,19 @@ function Clima(){
     }
 
     let imagenActual = Estilos.carga;
-
-    if(datoClima.main.temp <= 10){
-        imagenActual = Estilos.frio;
+    try {
+        if(datoClima.main.temp <= 10){
+            imagenActual = Estilos.frio;
+        }
+        if(datoClima.main.temp > 10 && datoClima.main.temp < 20 ){
+            imagenActual = Estilos.normal;
+        }
+        if(datoClima.main.temp >= 20){
+            imagenActual = Estilos.calor;
+        } 
+    } catch (error) {
+        
     }
-    if(datoClima.main.temp > 10 && datoClima.main.temp < 20 ){
-        imagenActual = Estilos.normal;
-    }
-    if(datoClima.main.temp >= 20){
-        imagenActual = Estilos.calor;
-    }
-
 
     return(
         <div className={Estilos.contenedorContenido}>
